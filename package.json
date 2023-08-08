@@ -1,0 +1,17 @@
+{
+  "name": "my-board",
+  "version": "1.0.0",
+  "description": "A simple board application",
+  "main": "app.js",
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
