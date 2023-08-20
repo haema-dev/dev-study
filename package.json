@@ -18,16 +18,8 @@
   },
   "scripts": {
     "dev": "node server/server.jsx",
-    "build": "npm install --save-dev eslint && next build",
+    "build": "next build",
     "start": "node server/server.jsx"
-  },
-  "eslintConfig": {
-    "extends": [
-      "next/core-web-vitals"
-    ],
-    "plugins": [
-      "next"
-    ]
   },
   "browserslist": {
     "production": [
