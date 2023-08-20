@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Container, StyledInput, SubmitButton} from "./StyledComponents";
+import {Container, StyledInput, SubmitButton} from "./style";
 
 export default function CreateStudyGroup() {
     const [groupName, setGroupName] = useState('');

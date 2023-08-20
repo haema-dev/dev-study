@@ -1,27 +1,32 @@
 {
-  "name": "study community",
+  "name": "study-community",
   "version": "1.0.0",
   "description": "A simple board application",
+  "main": "index.js",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "express": "^4.17.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "^5.0.1",
-    "styled-components": "^6.0.7",
-    "webpack": "^5.88.2",
-    "webpack-dev-middleware": "^6.1.1"
+    "mongodb": "^5.7.0",
+    "next": "^13.4.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.0.2",
+    "styled-components": "^6.0.7"
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "eslint-plugin-next": "^0.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "start-server": "node server/server.js",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "node server/server.jsx",
+    "build": "npm install --save-dev eslint && next build",
+    "start": "node server/server.jsx"
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "next/core-web-vitals"
+    ],
+    "plugins": [
+      "next"
     ]
   },
   "browserslist": {

@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'NanumSquareRoundBold';
+    src: url('../public/fonts/nanum-square-round/NanumSquareRoundOTFB.otf') format('opentype');
+    /* .otf의 경우 format을 'opentype'으로 변경 */
+}
+
+/* 바디 전체를 가운데 정렬 */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'NanumSquareRoundBold';
+}
+
+/* 제목 스타일링 */
+h1 {
+    font-size: 2.5em;
+    color: #007BFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;  /* 이 부분 추가 */
+    font-family: 'Arial', sans-serif;
+}
