@@ -2,7 +2,7 @@
   "name": "study-community",
   "version": "1.0.0",
   "description": "A simple board application",
-  "main": "index.js",
+  "main": "index.index",
   "dependencies": {
     "dotenv": "^16.3.1",
     "express": "^4.17.1",
