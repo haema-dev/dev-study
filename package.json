@@ -4,6 +4,7 @@
   "description": "A simple board application",
   "main": "index.js",
   "dependencies": {
+    "babel-plugin-styled-components": "^2.1.4",
     "dotenv": "^16.3.1",
     "express": "^4.17.1",
     "mongodb": "^5.7.0",
