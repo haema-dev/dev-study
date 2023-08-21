@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 
 /* 인원수 및 버튼 디자인 */

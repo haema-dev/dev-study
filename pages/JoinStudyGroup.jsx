@@ -1,3 +1,4 @@
+import React from 'react';
 import {GroupItem, GroupName, JoinButton, ListContainer, ParticipantCount} from "./style";
 import CreateStudyGroup from "./CreateStudyGroup";
 
