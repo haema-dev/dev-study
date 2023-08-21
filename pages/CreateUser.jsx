@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, StyledInput, SubmitButton } from './style';
+import { Container, StyledInput, SubmitButton } from '../src/style';
 
 function CreateUser() {
     const [username, setUsername] = useState('');
