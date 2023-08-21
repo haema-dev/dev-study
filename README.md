@@ -1,6 +1,6 @@
 # dev-study
 Study Community
-URL : https://web-dev-study-3prof2lll2cle19.sel3.cloudtype.app/
+URL : https://port-0-dev-study-3prof2lll2cle19.sel3.cloudtype.app/
 
 ### 목적
 스터디를 관리하기 위한 커뮤니티
