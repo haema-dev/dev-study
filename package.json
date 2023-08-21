@@ -19,7 +19,7 @@
   "scripts": {
     "dev": "node server/server.jsx",
     "build": "next build",
-    "start": "next start"
+    "start": "node server/server.jsx"
   },
   "browserslist": {
     "production": [
