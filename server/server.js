@@ -1,4 +1,5 @@
 require('dotenv').config({ path: '.env.local' });
+const uri = process.env.MONGODB_URI;
 
 const express = require('express');
 const next = require('next');
@@ -10,7 +11,7 @@ const app = next({ dev });
 const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
-    mongodb(); // MongoDB에 연결
+    mongodb(uri); // MongoDB에 연결
     const userData = userSchema
     const server = express();
 
@@ -18,8 +19,8 @@ app.prepare().then(() => {
 
     server.post('/api/users', async (req, res) => {
         try {
-            const { name, email } = req.body; // 요청 본문에서 name과 email 추출
-            const user = await userData.create({ name, email });
+            const { username, email } = req.body; // 요청 본문에서 name과 email 추출
+            const user = await userData.create({ username, email });
             res.status(201).json(user); // 사용자 정보를 응답으로 보냄
         } catch (err) {
             console.error(err);
