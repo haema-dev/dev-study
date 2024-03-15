@@ -1,4 +1,4 @@
-require('dotenv').config({ path: '.env.local' });
+require('dotenv').config({ path: '.env' });
 const uri = process.env.MONGODB_URI;
 
 const express = require('express');
@@ -19,8 +19,8 @@ app.prepare().then(() => {
 
     server.post('/api/users', async (req, res) => {
         try {
-            const { username, email } = req.body; // 요청 본문에서 name과 email 추출
-            const user = await userData.create({ username, email });
+            const { id, name } = req.body; // 요청 본문에서 id 와 name 추출
+            const user = await userData.create({ id, name });
             res.status(201).json(user); // 사용자 정보를 응답으로 보냄
         } catch (err) {
             console.error(err);

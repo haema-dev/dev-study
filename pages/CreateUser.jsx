@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { Container, StyledInput, SubmitButton } from '../src/style';
 
 function CreateUser() {
-    const [username, setUsername] = useState('');
-    const [email, setEmail] = useState('');
+    const [id, setId] = useState('');
+    const [name, setName] = useState('');
 
     const handleSubmit = async () => {
-        if (username.trim() === '' || email.trim() === '') {
+        if (id.trim() === '' || name.trim() === '') {
             alert('유저 정보를 입력하세요.');
             return;
         }
@@ -14,13 +14,13 @@ function CreateUser() {
         const response = await fetch('/api/users', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ username, email }),
+            body: JSON.stringify({ id, name }),
         });
 
         if (response.ok) {
             alert('유저 생성 완료');
-            setUsername('');
-            setEmail('');
+            setId('');
+            setName('');
         } else {
             alert('유저 생성 실패');
         }
@@ -29,14 +29,14 @@ function CreateUser() {
     return (
         <Container>
             <StyledInput
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                placeholder="유저명"
+                value={id}
+                onChange={(e) => setId(e.target.value)}
+                placeholder="유저아이디"
             />
             <StyledInput
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="이메일"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="유저닉네임"
             />
             <SubmitButton onClick={handleSubmit}>유저 생성</SubmitButton>
         </Container>
