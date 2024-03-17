@@ -1,4 +1,4 @@
-require('dotenv').config({ path: '.env' });
+// require('dotenv').config({ path: '.env' });
 const uri = process.env.MONGODB_URI;
 
 const express = require('express');
