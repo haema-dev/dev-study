@@ -1,13 +1,13 @@
-require('dotenv').config({ path: '.env' });
-const uri = process.env.MONGODB_URI;
+// require('dotenv').config({ path: '.env' });
+const uri = process.env.NEXT_PUBLIC_MONGODB_URI;
 
 const express = require('express');
 const next = require('next');
 const mongodb = require('../src/db');
 const userSchema = require('../src/User');
 
-const dev = process.env.NODE_ENV !== 'production';
-const app = next({ dev });
+// const dev = process.env.NODE_ENV !== 'production';
+const app = next({ dev: false });
 const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
