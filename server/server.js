@@ -33,7 +33,7 @@ app.prepare().then(() => {
         return handle(req, res);
     });
 
-    const PORT = process.env.PORT || 3001;
+    const PORT = process.env.PORT || 3000;
     server.listen(PORT, (err) => {
         if (err) throw err;
         console.log(`> Ready on http://localhost:${PORT}`);
