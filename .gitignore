@@ -34,7 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# my ignore files
 /.idea/
 /dev-study.iml
 /.env
 /package-lock.json
+/src/server.js
