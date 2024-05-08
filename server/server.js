@@ -19,15 +19,9 @@ app.prepare().then(() => {
 
     // 모든 도메인에서의 요청을 허용
     server.use(cors());
-
-    // Axios 인스턴스 설정
-    const api = axios.create({
-        baseURL: process.env.API_BASE_URL // 환경 변수에서 Base URL 읽어오기
-    });
-
     server.use(express.json()); // JSON 요청 본문 처리를 위한 미들웨어
 
-    server.post('/api/users', async (req, res) => {
+    server.post(`${process.env.API_BASE_URL}/api/users`, async (req, res) => {
         try {
             const { id, name } = req.body; // 요청 본문에서 id 와 name 추출
             const user = await userData.create({ id, name });
