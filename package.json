@@ -6,7 +6,6 @@
   "dependencies": {
     "axios": "^1.6.8",
     "babel-plugin-styled-components": "^2.1.4",
-    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.17.1",
     "mongodb": "^5.7.0",
@@ -19,6 +18,7 @@
     "styled-components": "^6.0.7"
   },
   "devDependencies": {
+    "cors": "^2.8.5",
     "eslint": "^8.47.0",
     "eslint-plugin-next": "^0.0.0",
     "tailwindcss": "^3.4.1"

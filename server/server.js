@@ -12,13 +12,13 @@ const userSchema = require('../src/User');
 const app = next({ dev: false });
 const handle = app.getRequestHandler();
 
-// 모든 도메인에서의 요청을 허용
-app.use(cors());
-
 app.prepare().then(() => {
     mongodb(uri); // MongoDB에 연결
     const userData = userSchema
     const server = express();
+
+    // 모든 도메인에서의 요청을 허용
+    server.use(cors());
 
     // Axios 인스턴스 설정
     const api = axios.create({
