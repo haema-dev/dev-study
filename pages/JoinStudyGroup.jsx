@@ -1,5 +1,5 @@
 import React from 'react';
-import {GroupItem, GroupName, JoinButton, ListContainer, ParticipantCount} from "../src/style";
+import {GroupItem, GroupName, JoinButton, ListContainer, ParticipantCount} from "../src/components/style";
 import CreateStudyGroup from "./CreateStudyGroup";
 
 const studyGroups = [

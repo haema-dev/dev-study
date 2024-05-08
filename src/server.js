@@ -6,8 +6,8 @@ const express = require('express');
 const cors = require('cors');
 
 const next = require('next');
-const mongodb = require('../src/db');
-const userSchema = require('../src/User');
+const mongodb = require('./db');
+const userSchema = require('./model/User');
 
 const app = next({ dev: false });
 const handle = app.getRequestHandler();
@@ -30,11 +30,6 @@ app.prepare().then(() => {
             console.error(err);
             res.status(500).send('서버 오류');
         }
-    });
-
-    // GET 요청을 처리하는 라우트 추가
-    server.get('/api/test', (req, res) => {
-        res.status(200).send('GET 요청이 정상적으로 처리되었습니다.');
     });
 
     server.all('*', (req, res) => {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Container, StyledInput, SubmitButton} from "../src/style";
+import {Container, StyledInput, SubmitButton} from "../src/components/style";
 
 export default function CreateStudyGroup() {
     const [groupName, setGroupName] = useState('');
@@ -10,18 +10,15 @@ export default function CreateStudyGroup() {
             return;
         }
 
-        // const response = await fetch('/api/study-groups', {
-        //     method: 'POST',
-        //     headers: { 'Content-Type': 'application/json' },
-        //     body: JSON.stringify({ name: groupName }),
-        // });
-        const response = await fetch('/api/test', {
-            method: 'GET',
+        const response = await fetch('/api/study-groups', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name: groupName }),
         });
 
         if (response.ok) {
             alert('스터디 그룹 생성 완료');
-            // setGroupName(''); // 성공 후 입력 필드 초기화
+            setGroupName(''); // 성공 후 입력 필드 초기화
         } else {
             alert('스터디 그룹 생성 실패');
         }

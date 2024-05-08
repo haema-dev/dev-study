@@ -1,6 +1,6 @@
 # dev-study
 Study Community
-URL : https://dev-study-3z0wv7baf-haemas-projects.vercel.app
+URL : https://dev-study-seven.vercel.app
 
 ### 목적
 스터디를 관리하기 위한 커뮤니티

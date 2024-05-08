@@ -1,6 +1,5 @@
-// pages/api/users.js
 import dbConnect from '../../src/db';
-import User from '../../src/User';
+import User from '../../src/model/User';
 
 export default async function handler(req, res) {
     const { method } = req;

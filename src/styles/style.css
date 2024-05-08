@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'NanumSquareRoundBold';
-    src: url('../public/fonts/nanum-square-round/NanumSquareRoundOTFB.otf') format('opentype');
+    src: url('../../public/fonts/nanum-square-round/NanumSquareRoundOTFB.otf') format('opentype');
     /* .otf의 경우 format을 'opentype'으로 변경 */
 }
 
