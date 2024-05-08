@@ -1,0 +1,62 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-78c92fac7aa8fdd8.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/XS2lN9dKueC8Ge61cdr2s/_buildManifest.js",
+    "static/XS2lN9dKueC8Ge61cdr2s/_ssgManifest.js"
+  ],
+  "rootMainFiles": [],
+  "pages": {
+    "/": [
+      "static/chunks/webpack-d38be8d96a62f950.js",
+      "static/chunks/framework-ecc4130bc7a58a64.js",
+      "static/chunks/main-f61746aa183f4a64.js",
+      "static/chunks/pages/index-247c5da4a7b9e860.js"
+    ],
+    "/CreateStudyGroup": [
+      "static/chunks/webpack-d38be8d96a62f950.js",
+      "static/chunks/framework-ecc4130bc7a58a64.js",
+      "static/chunks/main-f61746aa183f4a64.js",
+      "static/chunks/508-b55fc30abdc42609.js",
+      "static/chunks/pages/CreateStudyGroup-148a05bcd237d881.js"
+    ],
+    "/CreateUser": [
+      "static/chunks/webpack-d38be8d96a62f950.js",
+      "static/chunks/framework-ecc4130bc7a58a64.js",
+      "static/chunks/main-f61746aa183f4a64.js",
+      "static/chunks/508-b55fc30abdc42609.js",
+      "static/chunks/pages/CreateUser-0213e8c76c56ace3.js"
+    ],
+    "/JoinStudyGroup": [
+      "static/chunks/webpack-d38be8d96a62f950.js",
+      "static/chunks/framework-ecc4130bc7a58a64.js",
+      "static/chunks/main-f61746aa183f4a64.js",
+      "static/chunks/508-b55fc30abdc42609.js",
+      "static/chunks/pages/JoinStudyGroup-13ef8b31f1d0adab.js"
+    ],
+    "/_app": [
+      "static/chunks/webpack-d38be8d96a62f950.js",
+      "static/chunks/framework-ecc4130bc7a58a64.js",
+      "static/chunks/main-f61746aa183f4a64.js",
+      "static/css/c70bd0608f15da38.css",
+      "static/chunks/pages/_app-a589d50fa8528c8c.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack-d38be8d96a62f950.js",
+      "static/chunks/framework-ecc4130bc7a58a64.js",
+      "static/chunks/main-f61746aa183f4a64.js",
+      "static/chunks/pages/_error-77823ddac6993d35.js"
+    ],
+    "/chat": [
+      "static/chunks/webpack-d38be8d96a62f950.js",
+      "static/chunks/framework-ecc4130bc7a58a64.js",
+      "static/chunks/main-f61746aa183f4a64.js",
+      "static/chunks/599-581ba19976971165.js",
+      "static/chunks/pages/chat-e233b4844e5bf14d.js"
+    ]
+  },
+  "ampFirstPages": []
+}
