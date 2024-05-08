@@ -21,7 +21,7 @@ app.prepare().then(() => {
     server.use(cors());
     server.use(express.json()); // JSON 요청 본문 처리를 위한 미들웨어
 
-    server.post(`/api/users`, async (req, res) => {
+    server.post(`https://dev-study-seven.vercel.app/api/users`, async (req, res) => {
         try {
             const { id, name } = req.body; // 요청 본문에서 id 와 name 추출
             const user = await userData.create({ id, name });
