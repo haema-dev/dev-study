@@ -3,12 +3,17 @@ const uri = process.env.MONGODB_URI;
 const axios = require('axios'); // axios 모듈 추가
 
 const express = require('express');
+const cors = require('cors');
+
 const next = require('next');
 const mongodb = require('../src/db');
 const userSchema = require('../src/User');
 
 const app = next({ dev: false });
 const handle = app.getRequestHandler();
+
+// 모든 도메인에서의 요청을 허용
+app.use(cors());
 
 app.prepare().then(() => {
     mongodb(uri); // MongoDB에 연결
