@@ -11,7 +11,7 @@ function CreateUser() {
             return;
         }
 
-        const response = await fetch('/api/users', {
+        const response = await fetch('https://dev-study-seven.vercel.app/api/users', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ id, name }),
