@@ -9,7 +9,7 @@ export default function Home() {
                 <ul>
                     <li><Link href="/CreateUser">Create User</Link></li>
                     <li><Link href="/JoinStudyGroup">Join Study Group</Link></li>
-                    <li><Link href="/CreateStudyGroup">test</Link></li>
+                    {/*<li><Link href="/CreateStudyGroup">test</Link></li>*/}
                     {/*<li><Link href="/chat">Chat</Link></li>*/}
                 </ul>
             </nav>
