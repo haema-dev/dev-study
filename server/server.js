@@ -1,5 +1,6 @@
 require('dotenv').config({ path: '.env' });
 const uri = process.env.MONGODB_URI;
+const axios = require('axios'); // axios 모듈 추가
 
 const express = require('express');
 const next = require('next');
@@ -13,6 +14,11 @@ app.prepare().then(() => {
     mongodb(uri); // MongoDB에 연결
     const userData = userSchema
     const server = express();
+
+    // Axios 인스턴스 설정
+    const api = axios.create({
+        baseURL: process.env.API_BASE_URL // 환경 변수에서 Base URL 읽어오기
+    });
 
     server.use(express.json()); // JSON 요청 본문 처리를 위한 미들웨어
 
