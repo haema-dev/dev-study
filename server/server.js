@@ -32,6 +32,11 @@ app.prepare().then(() => {
         }
     });
 
+    // GET 요청을 처리하는 라우트 추가
+    server.get('/api/test', (req, res) => {
+        res.status(200).send('GET 요청이 정상적으로 처리되었습니다.');
+    });
+
     server.all('*', (req, res) => {
         console.log(`Request received for ${req.url}`);
         return handle(req, res);
