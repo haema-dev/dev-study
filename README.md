@@ -1,6 +1,6 @@
 # dev-study
 Study Community
-URL : https://port-0-dev-study-3prof2lll2cle19.sel3.cloudtype.app/
+URL : https://dev-study-3z0wv7baf-haemas-projects.vercel.app
 
 ### 목적
 스터디를 관리하기 위한 커뮤니티
